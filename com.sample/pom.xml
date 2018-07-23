@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>hibernet</groupId>
+  <artifactId>com.sample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>com.sample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <hibernate.version>3.5.1-Final</hibernate.version>
+  </properties>
+
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-annotations</artifactId>
+    <version>3.5.6-Final</version>
+</dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-commons-annotations -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-commons-annotations</artifactId>
+    <version>3.2.0.Final</version>
+</dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.hibernate/ejb3-persistence -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>ejb3-persistence</artifactId>
+    <version>3.3.2.Beta1</version>
+    <type>pom</type>
+</dependency>
+
+  
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+      <scope>hibernate</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>4.0.0.Beta2</version>
+      <scope>hibernate validator</scope>
+    </dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context</artifactId>
+    	<version>5.0.5.RELEASE</version>
+    	<scope>spring-context</scope>
+	</dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>3.1.1.RELEASE</version>
+      <scope>spring test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>3.1.1.RELEASE</version>
+      <scope>spring orm</scope>
+    </dependency>
+	<dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.7</version>
+  </dependency>
+	<dependency>
+    <groupId>javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.12.1.GA</version>
+</dependency> 
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jul-to-slf4j</artifactId>
+      <version>1.7.7</version>
+  </dependency>
+
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>1.7.7</version>
+  </dependency>
+
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>log4j-over-slf4j</artifactId>
+      <version>1.7.7</version>
+  </dependency>
+
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.7.7</version>
+  </dependency>
+	
+   
+  </dependencies>
+</project>
